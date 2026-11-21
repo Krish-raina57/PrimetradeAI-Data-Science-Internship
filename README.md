@@ -1,111 +1,78 @@
-# PrimetradeAI-Data-Science-Internship
-Data analysis project exploring the relationship between Bitcoin Fear &amp; Greed sentiment and Hyperliquid trader performance using Python, Pandas, and data visualization.
-# Bitcoin Market Sentiment vs Trader Performance Analysis
+# 📈 Bitcoin Sentiment & Trader Performance Analysis
 
-## Overview
+> **PrimetradeAI — Data Science Internship Project**
 
-This project explores the relationship between Bitcoin market sentiment and trader performance using historical trading data from Hyperliquid and the Bitcoin Fear & Greed Index.
-
-The objective is to identify patterns between market sentiment (Fear/Greed) and trading outcomes, helping uncover insights that can contribute to smarter trading strategies.
+Data analysis project exploring the relationship between **Bitcoin Fear & Greed sentiment** and **Hyperliquid trader performance** using Python, Pandas, and data visualization.
 
 ---
 
-## Datasets
+## 📌 Objective
 
-### 1. Bitcoin Fear & Greed Index
-Features:
-- Date
-- Classification (Fear, Greed, Extreme Fear, Extreme Greed)
+Analyze how market sentiment (measured by the Bitcoin Fear & Greed Index) correlates with trading performance on the Hyperliquid platform, uncovering patterns that could inform trading strategies.
 
-### 2. Hyperliquid Historical Trader Data
-Features:
-- Account
-- Coin
-- Execution Price
-- Size Tokens
-- Size USD
-- Side
-- Closed PnL
-- Fee
-- Timestamp
-- Direction
-
----
-
-## Project Workflow
-
-### Data Preprocessing
-- Loaded and cleaned both datasets
-- Converted timestamps to datetime format
-- Extracted dates from trade timestamps
-- Merged trading data with sentiment data
-
-### Exploratory Data Analysis
-- Profitability analysis across sentiment classes
-- Trade size analysis
-- Long vs Short performance comparison
-- Win rate analysis
-- Top trader analysis
-- Coin-wise profitability analysis
-- Fee analysis
-- Correlation analysis
-
-### Visualizations
-- Average PnL by Sentiment
-- Trade Count by Sentiment
-- Long vs Short Profitability
-- Trade Size Analysis
-- Win Rate Analysis
-- Top Coins by Profit
-- Fee Analysis
-- Correlation Heatmap
-- PnL Distribution Boxplot
-
----
-
-## Key Findings
-
-- Market sentiment significantly influences trader behavior.
-- Trade profitability varies across Fear and Greed periods.
-- Long and Short positions perform differently under different market conditions.
-- Trade size and win rates exhibit sentiment-dependent patterns.
-- Certain coins consistently generate higher profits.
-
----
-
-## Technologies Used
-
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
-
----
-
-## Repository Structure
+## 📂 Project Structure
 
 ```
-├── data/
-│   ├── historical_data.csv
-│   └── fear_greed_index.csv
-│
-├── notebook/
-│   └── ROUND_0.ipynb
-│
-├── images/
-│   └── charts
-│
+PrimetradeAI-Data-Science-Internship/
+├── Bitcoin_Sentiment_Trader_Analysis Round-0.ipynb   # Main analysis notebook
+├── fear_greed_index.csv                              # Fear & Greed Index dataset
+├── LICENSE                                           # MIT License
 └── README.md
 ```
 
----
+## 📊 Datasets
 
-## Author
+| Dataset | Description | Key Features |
+|---------|-------------|-------------|
+| **Fear & Greed Index** | Daily Bitcoin sentiment scores (0–100) | `date`, `value`, `classification` (Extreme Fear → Extreme Greed) |
+| **Hyperliquid Trader Data** | Trading performance metrics | `account`, `pnl`, `volume`, `win_rate`, `trade_count` |
 
-Krish Raina
+## 🔍 Analysis Workflow
 
-B.Tech CSE | Data Science & Machine Learning Enthusiast
+```
+Data Collection → Preprocessing → Exploratory Data Analysis → Visualization → Insights
+```
 
-GitHub: https://github.com/Krish-raina57
+1. **Data Preprocessing** — Handling missing values, type conversions, date alignment
+2. **Exploratory Data Analysis (EDA)** — Distribution analysis, correlation studies, trend identification
+3. **Visual Analysis** — Sentiment trends, PnL distributions, volume vs. sentiment plots
+4. **Key Findings** — Statistical relationships between sentiment and trader behavior
+
+## 🛠️ Tech Stack
+
+- **Python 3.x** — Core language
+- **Pandas** — Data manipulation & analysis
+- **Matplotlib & Seaborn** — Data visualization
+- **Jupyter Notebook** — Interactive analysis environment
+
+## 🔑 Key Findings
+
+- Market sentiment shows observable patterns in trader behavior and risk appetite
+- Periods of **Extreme Fear** correlate with specific trading volume and PnL patterns
+- Sentiment transitions (Fear → Greed) reveal potential leading indicators for performance shifts
+
+> *Open the notebook for detailed charts and statistical analysis.*
+
+## ⚡ Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/Krish-raina57/PrimetradeAI-Data-Science-Internship.git
+cd PrimetradeAI-Data-Science-Internship
+
+# Install dependencies
+pip install pandas matplotlib seaborn jupyter
+
+# Launch the notebook
+jupyter notebook "Bitcoin_Sentiment_Trader_Analysis Round-0.ipynb"
+```
+
+## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+## 👤 Author
+
+**Krish Raina** — [GitHub](https://github.com/Krish-raina57) · [LinkedIn](https://www.linkedin.com/in/krish-raina)
+
+*Built during the PrimetradeAI Data Science Internship (2026)*
